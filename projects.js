@@ -1,19 +1,19 @@
 const projects = [
 	{
-		title: "My First Project",
+		title: "My First Project - Weather App",
 		url: "file:///C:/Users/crystal/Desktop/website/weather%20app/index.html",
 		description:
 			"Its a Weather App. You can still use it everyday. All you have to type is City and State. It will give you Date, Temp for a high and a low for that day.",
 	},
 	{
-		title: "My Second Project",
+		title: "My Second Project - My Resume",
 		url: "file:///C:/Users/crystal/Desktop/website/index.html#page-top",
 		description:
 			"This is showing my resume online. Making it all nice with color's,  icons, past history, my goals, work history. Share what other sites I use.",
 	},
 	{
-		title: "My Third Project",
-		url: "file:///C:/Users/crystal/Documents/GitHub/NumGame/GuessGame",
+		title: "My Third Project - Guessing game",
+		url: "https://github.com/Quinn7979/NumGame",
 		description:
 			"Guessing Game, you are play with the computer to guess the number the computer pick from 1 to 20. I have set it up where it will be differenet number each time the game played. It will also let you know if your guess was to high or low. Then at the end of the game. It will tell you how many times it took for you to guess the correct number.",
 	},
@@ -34,7 +34,7 @@ projects.forEach((project) => {
 	const showUrl = document.createElement("p");
 	const visibleLink = document.createElement("a");
 	visibleLink.href = project.url ? project.url : "#";
-	visibleLink.textContent = project.url;
+	visibleLink.textContent = "Click here";
 
 	showUrl.appendChild(visibleLink);
 	listItem.appendChild(title);

@@ -13,6 +13,43 @@
         <h2>Projects</h2>
         <ul id="projects-list"></ul>
     </section>
+
+    <section id="contact-setion">
+        <form method="contact-form">
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" type="text" placeholder="Enter your First Name" required />
+                </div>
+                <div class="input-group"><label for="last-name">Last Name</label>
+                    <input id="last-name" type="text" placeholder="Enter your Last Name" required />
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" placeholder="Enter your Email" required />
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="message-type">Type of Message:</label>
+                    <select id="message-type" name="message-type">
+                        <option value="business">Business</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="general">General Question</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your Message" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Contact Me</button>
+                </div>
+        </form>
+    </section>
+
+
+
     <script src="projects.js"></script>
 </body>
 
