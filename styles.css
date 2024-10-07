@@ -1,0 +1,114 @@
+header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	z-index: 10;
+}
+
+body {
+	font-family: "Fredoka", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-variation-settings: bold;
+}
+
+.title {
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: bold;
+	font-size: 3rem;
+	color: #eed753;
+}
+
+.description {
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: bold;
+	font-size: 1.75rem;
+	color: #f1ae48;
+}
+
+.link {
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: thick bold;
+	font-size: 1.5rem;
+	color: #e43d0a;
+}
+
+.navbar {
+	position: absolute;
+	width: 100%;
+	max-width: 400px;
+	max-height: 100px;
+	margin: 0 auto;
+	padding: 1rem 2rem;
+	background: #d88fd2aa;
+	align-content: center;
+	display: flex;
+	border: 2px solid #00000011;
+	backdrop-filter: blur(10px);
+	border-radius: 50px;
+	transform: translateY(30px);
+	justify-content: center;
+}
+
+.logo {
+	font-size: 2rem;
+	text-decoration: none;
+	color: #4811af;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-img {
+	max-width: 60%;
+	max-height: 60%;
+}
+
+.headPic {
+	height: 50vh;
+	width: 100%;
+	background-image: url("image/coding.jpg");
+	padding-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#projects-section {
+	background: #86d2e6;
+	padding: 4rem 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.project {
+	width: 100%;
+	max-width: 1200px;
+	height: 300px;
+	display: flex;
+	margin: 4red auto;
+	background-color: #5a8fe0;
+	border: 1px solid #00000011;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #00000011;
+}
+.project-img {
+	width: 400px;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card-text {
+	padding: 6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
