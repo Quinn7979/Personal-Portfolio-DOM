@@ -12,6 +12,7 @@ body {
 	font-weight: 300;
 	font-style: normal;
 	font-variation-settings: bold;
+	background-color: aqua;
 }
 
 .title {
@@ -26,7 +27,7 @@ body {
 .description {
 	font-family: "Roboto Mono", monospace;
 	font-optical-sizing: auto;
-	font-weight: 600;
+	font-weight: 500;
 	font-style: bold;
 	font-size: 1.75rem;
 	color: #f1ae48;
@@ -83,16 +84,15 @@ body {
 }
 
 #projects-section {
-	background: #86d2e6;
-	padding: 4rem 0;
+	padding: 3rem 0;
 	align-items: center;
 	justify-content: center;
 }
 
 .project {
 	width: 100%;
-	max-width: 1200px;
-	height: 300px;
+	max-width: 1600px;
+	height: 400px;
 	display: flex;
 	margin: 4red auto;
 	background-color: #5a8fe0;
@@ -101,13 +101,16 @@ body {
 	box-shadow: 0 0 10px #00000011;
 }
 .project-img {
-	width: 400px;
+	display: flex;
+	width: 300px;
 	height: 100%;
-	object-fit: cover;
+	justify-content: center;
+	align-content: center;
+	padding: 4rem 3rem;
 }
 
 .card-text {
-	padding: 6rem;
+	padding: 5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

@@ -34,25 +34,29 @@ projects.forEach((project) => {
 	pic.setAttribute("src", project.src);
 	pic.setAttribute("alt", project.alt);
 
+	const textCard = document.createElement("div");
+	textCard.classList.add("card-text");
+
 	const title = document.createElement("h3");
 	title.textContent = project.title || "Untitled Project";
 	title.classList.add("title");
+	textCard.appendChild(title);
 
 	const description = document.createElement("p");
 	description.textContent = project.description || "No description available.";
 	description.classList.add("description");
 	pic.classList.add("project-img");
+	textCard.appendChild(description);
 
 	const showUrl = document.createElement("p");
 	const visibleLink = document.createElement("a");
 	visibleLink.href = project.url ? project.url : "#";
 	visibleLink.textContent = "Click here";
 	showUrl.classList.add("link");
-
 	showUrl.appendChild(visibleLink);
-	listItem.appendChild(title);
-	listItem.appendChild(description);
-	listItem.appendChild(showUrl);
-	projectsList.appendChild(listItem);
+	textCard.appendChild(showUrl);
+
 	listItem.appendChild(pic);
+	listItem.appendChild(textCard);
+	projectsList.appendChild(listItem);
 });
