@@ -1,0 +1,14 @@
+{
+	"name": "personal-portfolio-dom",
+	"version": "1.0.0",
+	"main": "projects.js",
+	"scripts": {
+		"dev": "vite"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"vite": "^5.4.8"
+	}
+}
