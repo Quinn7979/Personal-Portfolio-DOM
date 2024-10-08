@@ -92,7 +92,8 @@ body {
 }
 
 .card-text {
-	padding: 5rem;
+	height: fit-content;
+	padding: 2.5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -113,21 +114,19 @@ body {
 	font-family: "Roboto Mono", monospace;
 	font-optical-sizing: auto;
 	font-weight: 500;
-	font-style: bold;
-	font-size: 1.75rem;
-	color: #f1ae48;
 }
 
 .description-section {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.25s ease;
-	background-color: #f1ae48;
-	font-weight: 300;
+	font-weight: 600;
 	margin: 10px;
+	color: #f1ae48;
+	font-style: bold;
+	font-size: 1.75rem;
 }
 
 .description-section.active {
-	max-height: 100px;
-	height: 100%;
+	max-height: 100px !important;
 }
