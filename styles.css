@@ -232,10 +232,11 @@ form button:hover {
 }
 footer {
 	background: #f6f6f6;
-	padding: 2rem 0;
+	padding: 1rem 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-weight: bold;
 	background-color: #5a8fe0;
+	font-size: 2rem;
 }
