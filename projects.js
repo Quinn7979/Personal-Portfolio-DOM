@@ -5,7 +5,7 @@ const projects = [
 		title: "Weather App",
 		url: "file:///C:/Users/crystal/Desktop/website/weather%20app/index.html",
 		description:
-			"The Weather App - You can use it everyday. All you have to type is City and State. It will give you date, temperature for a high and a low for that day.",
+			"The Weather App is use to check weather everyday. All you have to type is City and State. It will give you date, temperature for a high and a low for that Day.",
 	},
 	{
 		src: "image/resume.png",
@@ -13,7 +13,7 @@ const projects = [
 		title: "My Resume",
 		url: "file:///C:/Users/crystal/Desktop/website/index.html#page-top",
 		description:
-			"Showing my resume online. Made it all nice with color's,  icons, past history, my goals, work history. Share sites that use.",
+			"Showing my resume online is making it all nice with color's, icons, past history, my goals, work history also sharing sites that use.",
 	},
 	{
 		src: "image/guess.png",
@@ -21,7 +21,7 @@ const projects = [
 		title: "Guessing Game- GetHub Link",
 		url: "https://github.com/Quinn7979/NumGame",
 		description:
-			"You are play with the computer to guess the number the computer pick from 1 to 20. The number is new each time the game is played. It will tell you how many times it took for you to guess the correct number.",
+			"You are play with the computer. The computer pick's a number from 1 to 20. Each time you play the number is different. It will tell you how many times it took for you to guess the correct number.",
 	},
 ];
 
@@ -42,11 +42,20 @@ projects.forEach((project) => {
 	title.classList.add("title");
 	textCard.appendChild(title);
 
-	const description = document.createElement("p");
+	const description = document.createElement("div");
 	description.textContent = project.description || "No description available.";
-	description.classList.add("description");
+	// description.classList.add("description");
+	description.classList.add("description-section");
+	console.log(description.classList);
 	pic.classList.add("project-img");
 	textCard.appendChild(description);
+
+	title.addEventListener("click", () => {
+		title.classList.toggle("active");
+		console.log(description.classList);
+		description.classList.toggle("active");
+		console.log(description.classList);
+	});
 
 	const showUrl = document.createElement("p");
 	const visibleLink = document.createElement("a");

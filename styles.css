@@ -15,24 +15,6 @@ body {
 	background-color: aqua;
 }
 
-.title {
-	font-family: "Roboto Mono", monospace;
-	font-optical-sizing: auto;
-	font-weight: 600;
-	font-style: bold;
-	font-size: 3rem;
-	color: #eed753;
-}
-
-.description {
-	font-family: "Roboto Mono", monospace;
-	font-optical-sizing: auto;
-	font-weight: 500;
-	font-style: bold;
-	font-size: 1.75rem;
-	color: #f1ae48;
-}
-
 .link {
 	font-family: "Roboto Mono", monospace;
 	font-optical-sizing: auto;
@@ -114,4 +96,38 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+/*in the card*/
+.title {
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: bold;
+	font-size: 3rem;
+	color: #eed753;
+	cursor: pointer;
+}
+
+.description {
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: bold;
+	font-size: 1.75rem;
+	color: #f1ae48;
+}
+
+.description-section {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.25s ease;
+	background-color: #f1ae48;
+	font-weight: 300;
+	margin: 10px;
+}
+
+.description-section.active {
+	max-height: 100px;
+	height: 100%;
 }
