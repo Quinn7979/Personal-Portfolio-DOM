@@ -3,11 +3,121 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <title>My Projects</title>
-    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="src/output.css" />
 </head>
 
-<body class="bg-gray-100 text-gray-900"></body>
+<body class="bg-purple-600 flex flex-col md:flex-row h-screen">
+    <!-- Header Section -->
+    <div class="bg-blue-600 text-white">
+        <div class="flex justify-between md:justify-center items=center m-1">
+            <a href="/">
+                <img src="image/2project.png" alt="logo" class="w-12 h-12 rounded-lg object-cover" /></a>
+            <button id="menu-toggle" class="p-4 text-slate-400 hover:text-slate-200 active:text-slate-200 md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" width="24" height="24" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                </svg>
+            </button>
+        </div>
+        <nav id="menu" class="hidden md:h-[calc(100%-5.5rem)] md:flex md:felex-col md:justify-between md:w-51">
+            <ul class="flex flex-col text-sm text-slate-400">
+                <li><a href="#" class="flex justify-between items-center p-4 hover:bg-slate-400 hover:text-slate-200">
+                        <span>Home</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 6l16 0" />
+                            <path d="M4 12l16 0" />
+                            <path d="M4 18l16 0" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="#" class="flex justify-between items-center p-4 hover:bg-slate-400 hover:text-slate-200">
+                        <span>Projects</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 6l16 0" />
+                            <path d="M4 12l16 0" />
+                            <path d="M4 18l16 0" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="#" class="flex justify-between items-center p-4 hover:bg-slate-400 hover:text-slate-200">
+                        <span>Contact</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 6l16 0" />
+                            <path d="M4 12l16 0" />
+                            <path d="M4 18l16 0" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Centered Content-->
+    <div class="justify-center content-between w-full">
+        <header class="flex-row ">
+            <div class="flex justify-center">
+                <img src="image/rock.jpg" class="h-16 w-16 rounded-xl">
+                <h1 class="text-4xl font-bold font-size:2 flex text-center text-slate-300">
+                    Crystal's Portfolio
+                </h1>
+            </div>
+        </header>
+
+        <!-- Projects Section -->
+        <div class="content-between flex flex-col">
+            <main>
+                <!-- Project 1 -->
+                <div class="bg-purple-600 min-w-56 sm:max-w-80">
+                    <img src="image/weather.png" alt="Project 1" class="rounded-sm ">
+                    <h3 class="text-2xl font-semibold mb-2">Project One</h3>
+                    <p class="text-white mb-4">The Weather App is use to check weather everyday. All you have to type is
+                        City and State. It will give you date,
+                        temperature for a high and a low for that Day.</p>
+                    <a href="#" class="text-green-500 hover:underline">
+                        View Project
+                    </a>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-purple-600 min-w-56 sm:max-w-80">
+                    <img src="image/resume.png" alt="Project 2" class="rounded-sm">
+                    <h3 class="text-2xl font-semibold mb-2">Project Two</h3>
+                    <p class="text-white mb-4">Showing my resume online is making it all nice with color's, icons, past
+                        history, my goals, work history also sharing
+                        sites that use.</p>
+                    <a href="#" class="text-green-500 hover:underline">View Project</a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-purple-600 min-w-56 sm:max-w-80">
+                    <img src="image/guess.png" alt="Project 3" class="rounded-sm">
+                    <h3 class="text-2xl font-semibold mb-2">Project Three</h3>
+                    <p class="text-white mb-4">You are play with the computer. The computer pick's a number from 1 to
+                        20. Each time you play the number is different.
+                        It will tell you how many times it took for you to guess the correct number.</p>
+                    <a href="#" class="text-green-500 hover:underline">View Project</a>
+                </div>
+                <!-- Footer Section -->
+                <footer class="bg-purple-900 text-white p-6 mt-10 text-center">
+                    <div class="container mx-auto text-center">
+                        <p>&copy; 2024 Crystal's Portfolio. All Rights Reserved.</p>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </div>
+</body>
 
 </html>
